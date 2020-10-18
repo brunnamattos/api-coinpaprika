@@ -1,0 +1,19 @@
+<mat-toolbar>
+  
+    <mat-toolbar-row>
+      <span>Bitcoin Kueri</span>
+      <span class="example-spacer"></span>
+      <mat-form-field appearance="fill">
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate placeholder="Start date">
+          <input matEndDate placeholder="End date">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+      <button mat-raised-button><mat-icon>search</mat-icon>Consultar</button>
+      </mat-toolbar-row>
+  
+</mat-toolbar>
+
+<app-today></app-today>

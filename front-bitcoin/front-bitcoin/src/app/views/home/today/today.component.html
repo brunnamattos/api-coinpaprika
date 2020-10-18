@@ -1,0 +1,27 @@
+<ng-container *ngFor="let Consult of consultToday">
+    <div class="table-responsive-lg">
+        <table class="table table-hover">
+            <tr>
+                <th scope="col">Data</th>
+                <td>{{Consult.time_open}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Valor Inicial</th>
+                <td>{{Consult.open}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Valor Final</th>
+                <td>{{Consult.close}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Valor mais alto</th>
+                <td>{{Consult.high}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Valor mais baixo</th>
+                <td>{{Consult.low}}</td>
+            </tr>
+        </table>
+    </div>
+
+</ng-container>
